@@ -3,15 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- General styles -->
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
-    <!-- Styles for this page -->
     <link rel="stylesheet" href="./assets/css/pages/index.css">
-    <title>Main Page</title>
+    <title>Home</title>
 </head>
 <body>
-    
+    <header class="siteHeader">
+        <nav class="navBar">
+            <a href="index.html" class="navLink">Home</a>
+            <span class="divider">|</span>
+            <a href="addPost.html" class="navLink">addPost</a>
+        </nav>
+        <img src="./assets/media/userIcon.png" alt="Avatar" class="avatarImg">
+    </header>
+
+    <main class="layout">
+        <aside class="rail"></aside>
+
+        <section class="feed">
+            <!-- Post with image -->
+            <article class="post">
+                <div class="postInfo">
+                    <img src="./assets/media/userIcon.png" alt="Avatar" id="postAvatar">
+                    <time class="time" datetime="2022-10-22">Oct 22, 2022</time>
+                </div>
+                <figure class="postMedia">
+                    <img src="./assets/media/tartu2024.png" alt="Tartu2024">
+                </figure>
+                <p class="postText">Tartu 2022</p>
+                <button class="buttonLike" type="button">👍</button>
+            </article>
+
+            <!-- Post without image -->
+            <article class="post">
+                <div class="postInfo">
+                    <img src="./assets/media/userIcon.png" alt="Avatar" id="postAvatar">
+                    <time class="time" datetime="2022-10-22">Oct 22, 2022</time>
+                </div>
+                <p class="postText">Anyone knows in which room is the lab today?</p>
+                <button class="buttonLike" type="button">👍</button>
+            </article>
+
+            <!-- Post without image -->
+            <article class="post">
+                <div class="postInfo">
+                    <img src="./assets/media/userIcon.png" alt="Avatar" id="postAvatar">
+                    <time class="time" datetime="2022-10-22">Oct 22, 2022</time>
+                </div>
+                <p class="postText">This is a post without an image.</p>
+                <button class="buttonLike" type="button">👍</button>
+            </article>
+
+            <!-- Post with image -->
+            <article class="post">
+                <div class="postInfo">
+                    <img src="./assets/media/userIcon.png" alt="Avatar" id="postAvatar">
+                    <time class="time" datetime="2023-06-30">Jun 30, 2023</time>
+                </div>
+                <figure class="postMedia">
+                    <img src="./assets/media/miami2023.png" alt="Miami 2023">
+                </figure>
+                <p class="postText">Miami 2023</p>
+                <button class="buttonLike" type="button">👍</button>
+            </article>
+
+            <!-- Post with image -->
+            <article class="post">
+                <div class="postInfo">
+                    <img src="./assets/media/userIcon.png" alt="Avatar" id="postAvatar">
+                    <time class="time" datetime="2025-10-05">Oct 5, 2025</time>
+                </div>
+                <figure class="postMedia">
+                    <img src="./assets/media/alicante2025.png" alt="Alicante 2025">
+                </figure>
+                <p class="postText">Alicante 2025</p>
+                <button class="buttonLike" type="button">👍</button>
+            </article>
+        </section>
+
+        <aside class="rail"></aside>
+    </main>
+
+    <footer class="siteFooter">
+        <div class="footerContent">
+            Footer
+        </div>
+    </footer>
 </body>
 </html>

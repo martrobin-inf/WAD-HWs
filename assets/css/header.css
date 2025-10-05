@@ -1,1 +1,31 @@
 /* Styles for header */
+
+.siteHeader {
+  display:flex;
+  margin: 12px;
+  gap: var(--gap);
+  padding: var(--gap);
+  justify-content: space-between;
+  background: #bdbdbd;
+  border-radius: 8px;
+}
+
+.navBar { display:flex; align-items:center; gap: 6px; }
+.navLink { 
+    text-decoration: none; 
+    font-size: 26px;
+    font-weight: 600;
+    color:#111; 
+    padding:2px 4px; 
+    border-radius:4px;
+}
+.navLink:hover { background-color: #fff;}
+.divider { color:#555; font-size: 26px; font-weight: 600; }
+
+.avatarImg {
+  width:80px; height:80px;
+}
+
+@media (max-width: 767px) { 
+  .avatarImg { width:60px; height:60px; }
+}

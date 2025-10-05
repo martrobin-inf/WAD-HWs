@@ -1,1 +1,7 @@
-/* General styles */
+/* Header & footer */
+@import url("./header.css");
+@import url("./footer.css");
+
+* { box-sizing: border-box; }
+:root { --gap: 12px; --card: #eee; --ui: #cfcfcf; }
+body { margin: 0; font-size: 16px; font-family: sans-serif; background:#dcdcdc; }

@@ -1,1 +1,54 @@
 /* Styles for index.html */
+@import url("../base.css");
+
+.layout {
+  display: flex;
+  gap: var(--gap);
+  padding: var(--gap);
+  align-items: stretch;
+}
+.rail {
+  background: #bdbdbd;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.feed {
+    flex: 1 1 0; 
+    display: flex; 
+    flex-direction: column; 
+    gap: var(--gap);
+}
+
+.layout > .rail { width: 250px; }
+
+.post {
+  background: #cacaca;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.postInfo { display:flex; align-items:center; color:#000000; }
+.postInfo .time { margin-left:auto; font-size: 26px; }
+.postInfo + p { margin-top: 20px; }
+#postAvatar { width:60px; height:60px; }
+
+.postInfo ~ .postMedia { margin-top: 20px; }
+
+.postMedia img { width:100%; height:auto; border-radius: 8px; }
+.postText { font-size: 26px; }
+.postMedia, .postText, .buttonLike { margin: 8px 20px; }
+.buttonLike { border:1px solid #bbb; background:#fff; padding:6px 10px; border-radius:6px; cursor:pointer; }
+.buttonLike:hover { background:#cacaca; }
+
+@media (max-width: 767px) {
+  .layout { flex-direction: row; }
+  .layout > .rail { width: 50px; }
+  .post { margin-left: 10px; margin-right: 10px; }
+  #postAvatar { width:40px; height:40px; }
+  .postInfo .time { font-size: 18px; }
+  .postText { font-size: 18px; }
+  .postMedia, .postText, .buttonLike { margin: 5px 7px; }
+  .buttonLike { padding:4px 6px; }
+}

@@ -1,1 +1,48 @@
 /* Styles for addPost.html */
+
+/*Whole container*/
+.boxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+/*Things inside container*/
+.postBox {
+    padding: 20px;
+    width: 300px;
+    line-height: 30px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px gray;
+    text-align: center;
+}
+
+/*Input size and shape*/
+input {
+    width: 70%;
+    height: 40px;
+    padding: 10px;
+}
+
+/*Submit button*/
+input[type="submit"]{
+    padding: 10px;
+    cursor: pointer;
+    background-color: chocolate;
+    border: 0;
+    border-radius: 5px;
+}
+/*Submit button when mouse on button*/
+input[type="submit"]:hover {
+    background-color: rgb(175, 87, 24);
+}
+
+/*text box*/
+textarea{
+    height: 60px;
+}
+ #fileSelect {
+    color: aquamarine;
+ }

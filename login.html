@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- General styles -->
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <!-- Styles for this page -->
     <link rel="stylesheet" href="./assets/css/pages/login.css">
     <title>Login</title>
 </head>
 <body>
+    <header class="siteHeader">
+        <nav class="navBar">
+            <a href="index.html" class="navLink">Home</a>
+        </nav>
+        <img src="./assets/media/userIcon.png" alt="Avatar" class="avatarImg">
+    </header>
     
+    <main>
+        <div class="login-box">
+            <h2>Welcome to PostIt</h2>
+            <a href="#" class="create-account">Create an account</a>
+            <p>or</p>
+            <p class="instruction">Please Log In</p>
+
+            <form action="index.html">
+                <label>Email</label>
+                <input type="email" placeholder="Email" required>
+                <label>Password</label>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="login-button">Log in</button>
+            </form>
+
+            <a href="#" class="forgot-password">Forget password</a>
+        </div>
+    </main>
 </body>
 </html>

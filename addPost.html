@@ -21,7 +21,7 @@
     <section>
         <div class="boxContainer">
         <div class="postBox">
-            <form action="..."> <!--Fail kus on andmed v kus neid töödeldakse-->
+            <form action="index.html">
 
                 <label for="postBody">Post body</label>
                 <textarea name="postBody" maxlength="100" placeholder="Text area"></textarea><br>
@@ -29,11 +29,8 @@
                 <label for="fileSelection" >Select file</label>
                 <input type="file" id="fileSelect" accept="image/*,.pdf" required> <br>
 
-                <!-- PRAEGU EI FUNKA !!! -->
-                <a href="index.html"><input type="submit" value="Create post"></a>
-                <!-- JS'ga midagi seotud, vaatab hiljem seda
-                <input type="submit" value="Create post" onclick="window.location.replace('index.html')"/> 
-                -->
+                <input type="submit" value="Create post">
+
             </form>
         </div>
         </div>

@@ -5,35 +5,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    position: relative;
 }
 /*Things inside container*/
 .postBox {
-    padding: 20px;
-    width: 300px;
-    line-height: 30px;
-    background-color: rgb(197, 197, 197);
-    border-radius: 7px;
-    box-shadow: 1px 1px 10px gray;
+    padding: 30px;
+    margin-top: 64px;
+    width: 500px;
+    background-color: #bdbdbd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
-/*Input size and shape*/
-input {
-    width: 70%;
-    height: 40px;
-    padding: 10px;
+/**/
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 10px;
 }
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
 
 /*Submit button*/
 input[type="submit"]{
     padding: 10px;
+    margin-top: 20px;
     cursor: pointer;
     background-color: chocolate;
     border: 0;
     border-radius: 5px;
 }
+
 /*Submit button when mouse on button*/
 input[type="submit"]:hover {
     background-color: rgb(175, 87, 24);
@@ -41,8 +59,17 @@ input[type="submit"]:hover {
 
 /*text box*/
 textarea{
-    height: 60px;
+    height: 50px;
 }
- #fileSelect {
-    color: aquamarine;
- }
+
+#fileSelect {
+    padding-left: 25%;
+
+}
+
+/*Smaller media adjustments*/
+@media (max-width: 600px) {
+    .postBox { width: 300px;}
+    #fileSelect {padding-left: 3%;}
+}
+

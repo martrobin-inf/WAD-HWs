@@ -6,15 +6,21 @@
   margin: 12px;
   gap: var(--gap);
   padding: var(--gap);
-  background: #bdbdbd;
+  background: #ffffff;
   border-radius: 8px;
 }
 
 .footerContent {
-    text-decoration: none; 
+    text-decoration: none;
+    text-align: center;
     font-size: 26px;
     font-weight: 600;
     color:#111; 
     padding:2px 4px; 
     border-radius:8px;
+}
+
+.footerContent p {
+  font-size: 20px;
+  font-weight: 200;
 }

@@ -8,7 +8,7 @@
   align-items: stretch;
 }
 .rail {
-  background: #bdbdbd;
+  background: #ffffff;
   border-radius: 8px;
   padding: 8px;
 }
@@ -23,11 +23,12 @@
 .layout > .rail { width: 250px; }
 
 .post {
-  background: #cacaca;
+  background: #ffffff;
   margin-left: 100px;
   margin-right: 100px;
   border-radius: 8px;
   padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 .postInfo { display:flex; align-items:center; color:#000000; }
 .postInfo .time { margin-left:auto; font-size: 26px; }

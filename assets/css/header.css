@@ -6,7 +6,7 @@
   gap: var(--gap);
   padding: var(--gap);
   justify-content: space-between;
-  background: #bdbdbd;
+  background: #ffffff;
   border-radius: 8px;
 }
 
@@ -18,8 +18,9 @@
     color:#111; 
     padding:2px 4px; 
     border-radius:4px;
+    transition: background-color 0.5s;
 }
-.navLink:hover { background-color: #fff;}
+.navLink:hover { background-color: #dbdbdb;}
 .divider { color:#555; font-size: 26px; font-weight: 600; }
 
 .avatarImg {

@@ -17,7 +17,11 @@
     text-align: center;
 }
 
-/**/
+h2{
+    color:rgb(52, 52, 230);
+    padding: 10px;
+}
+/*columns for texts and inputs*/
 .col-25 {
   float: left;
   width: 25%;
@@ -45,14 +49,15 @@ label {
 /*Submit button*/
 input[type="submit"]{
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer;
-    background-color: chocolate;
+    background-color: rgb(70, 70, 255);
+    color: aliceblue;
     border: 0;
     border-radius: 5px;
 }
 
-/*Submit button when mouse on button*/
+/*Submit button when mouse is hovering on it*/
 input[type="submit"]:hover {
     background-color: rgb(175, 87, 24);
 }
@@ -64,7 +69,6 @@ textarea{
 
 #fileSelect {
     padding-left: 25%;
-
 }
 
 /*Smaller media adjustments*/

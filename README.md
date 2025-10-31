@@ -8,4 +8,5 @@
 * Mart Rõbin
 
 ## Progress
-HW 1 - To Do
+HW 1 - Done
+HW 2 - To Do

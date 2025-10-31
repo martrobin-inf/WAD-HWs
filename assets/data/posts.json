@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "author": "Tanel",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2025-10-05",
+    "image": "./assets/media/alicante2025.png",
+    "text": "Alicante 2025",
+    "likes": 12
+  },
+  {
+    "id": 2,
+    "author": "Lauri",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2025-06-30",
+    "image": "./assets/media/miami2023.png",
+    "text": "Miami 2023",
+    "likes": 7
+  },
+  {
+    "id": 3,
+    "author": "Madis",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2024-10-22",
+    "image": "./assets/media/tartu2024.png",
+    "text": "Tartu 2022",
+    "likes": 23
+  },
+  {
+    "id": 4,
+    "author": "Katarina",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2024-02-14",
+    "image": null,
+    "text": "Anyone knows in which room is the lab today?",
+    "likes": 3
+  },
+  {
+    "id": 5,
+    "author": "Jaan",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2024-01-01",
+    "image": null,
+    "text": "This is a post without an image.",
+    "likes": 1
+  },
+  {
+    "id": 6,
+    "author": "Liisa",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2023-12-20",
+    "image": null,
+    "text": "Morning in Tallinn.",
+    "likes": 5
+  },
+  {
+    "id": 7,
+    "author": "Oskar",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2023-06-10",
+    "image": null,
+    "text": "Great coffee place discovered today!",
+    "likes": 9
+  },
+  {
+    "id": 8,
+    "author": "Grete",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2023-05-12",
+    "image": null,
+    "text": "Reminder: project deadline next week.",
+    "likes": 0
+  },
+  {
+    "id": 9,
+    "author": "Mark",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2023-02-01",
+    "image": null,
+    "text": "Hike today!",
+    "likes": 15
+  },
+  {
+    "id": 10,
+    "author": "Anu",
+    "avatar": "./assets/media/userIcon.png",
+    "date": "2022-12-24",
+    "image": null,
+    "text": "Merry Christmas everyone 🎄",
+    "likes": 42
+  }
+]

@@ -45,7 +45,7 @@
 
 @media (max-width: 767px) {
   .layout { flex-direction: row; }
-  .layout > .rail { width: 50px; }
+  .layout > .rail { display: none; }
   .post { margin-left: 10px; margin-right: 10px; }
   #postAvatar { width:40px; height:40px; }
   .postInfo .time { font-size: 18px; }

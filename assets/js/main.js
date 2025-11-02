@@ -1,7 +1,7 @@
 const LOCAL_JSON = './assets/data/posts.json'
 const ENDPOINT_JSON = 'https://api.jsonbin.io/v3/b/69079673ae596e708f3ffd57?meta=false'
 
-fetch(LOCAL_JSON)
+fetch(ENDPOINT_JSON)
     .then(response => response.json())
     .then(posts => {
         const feed = document.querySelector('.feed');

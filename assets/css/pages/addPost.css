@@ -3,9 +3,9 @@
 /*Whole container*/
 .boxContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
 }
+
 /*Things inside container*/
 .postBox {
     padding: 30px;
@@ -21,6 +21,7 @@ h2{
     color:rgb(52, 52, 230);
     padding: 10px;
 }
+
 /*columns for texts and inputs*/
 .col-25 {
   float: left;
@@ -44,7 +45,6 @@ label {
     margin-top: 5px;
     display: inline-block;
 }
-
 
 /*Submit button*/
 input[type="submit"]{
@@ -73,7 +73,7 @@ textarea{
 }
 
 /*Smaller media adjustments*/
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .postBox { width: 300px;}
     #fileSelect {padding-left: 3%;}
 }

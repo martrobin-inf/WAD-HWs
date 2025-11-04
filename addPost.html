@@ -17,7 +17,12 @@
         <nav class="navBar">
             <a href="index.html" class="navLink">Home</a>
         </nav>
-        <a href="login.html"><img src="./assets/media/userIcon.png" alt="Avatar" class="avatarImg"></a>
+        <img src="./assets/media/userIcon.png" alt="Avatar" class="avatarImg">
+        <div class="userBox">
+            <p class="userName">John Doe</p>
+            <p class="userEmail">john.doe@ut.ee</p>
+            <p class="logoutButton">Log out</p>
+        </div>
     </header>
 
     <section>
@@ -40,18 +45,18 @@
                             <label for="fileSelect">Select file</label>
                         </div>
                         <div class="col-75">
-                            <input type="file" id="fileSelect" accept="image/*,.pdf" required> <br>
+                            <input type="file" id="fileSelect" accept="image/*,.pdf"> <br> 
                         </div>
                     </div>
 
-                    <input type="submit" value="Create post">
+                    <input type="submit" value="Create post"> <!--button or input?-->
 
                 </form>
             </div>
         </div>
     </section>
 
-
+<script src="./assets/js/header.js"></script>
 </body>
 
 </html>

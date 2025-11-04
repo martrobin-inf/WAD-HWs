@@ -25,8 +25,31 @@
 
 .avatarImg {
   width:80px; height:80px;
+  cursor: pointer;
 }
+
+/*User info box*/
+.userBox {
+    position: absolute;
+    top: 120px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 16px;
+    display: none;
+    width: 160px;
+    text-align: left;
+}
+
+.userName {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width: 767px) { 
   .avatarImg { width:60px; height:60px; }
+  .userBox{top: 100px;}
 }
+

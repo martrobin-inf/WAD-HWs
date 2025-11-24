@@ -10,4 +10,6 @@
 ## Progress
 HW 1 - Done
 
-HW 2 - To Do
+HW 2 - Done
+
+HW 3 - To Do

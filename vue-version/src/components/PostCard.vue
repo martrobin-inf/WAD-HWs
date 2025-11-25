@@ -41,6 +41,7 @@ export default {
   background: #ffffff;
   margin-left: 100px;
   margin-right: 100px;
+  margin-bottom: 20px;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
@@ -48,7 +49,7 @@ export default {
 .postInfo { display:flex; align-items:center; color:#000000; }
 .postInfo .time { margin-left:auto; font-size: 26px; }
 .postInfo + p { margin-top: 20px; }
-.postAvatar { width:60px; height:60px; }
+.postAvatar { width:60px; height:60px; margin-right: 15px;}
 
 .postInfo ~ .postMedia { margin-top: 20px; }
 

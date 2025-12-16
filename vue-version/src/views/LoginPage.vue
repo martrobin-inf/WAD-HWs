@@ -14,7 +14,11 @@
                     <input type="password" v-model="password" />
                 </div>
 
-                <button class="login-btn" @click="submitLogin">Login</button>
+                <div class="buttons-container">
+                    <button class="login-btn" @click="submitLogin">Login</button>
+                    <div class="or-text">OR</div>
+                    <button class="signup-btn" @click="goToSignUp">SignUp</button>
+                </div>
             </div>
         </div>
 
@@ -57,6 +61,9 @@ export default {
                 console.error("Login error: ", err)
                 alert("Server error")
             }
+        },
+        goToSignUp() {
+            this.$router.push("/signup")
         }
     }
 }
@@ -96,7 +103,15 @@ input {
   border: 1px solid #bbb;
 }
 
-.login-btn {
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.login-btn, .signup-btn {
   width: 100%;
   padding: 10px;
   margin-top: 5px;

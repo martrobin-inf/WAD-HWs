@@ -40,7 +40,7 @@ router.beforeEach((to, from, next) => {
   const token = localStorage.getItem('token')
 
   if (to.name === 'main' && !token) {
-    next({ name: 'login' })
+    next({ name: 'signup' })
   } else {
     next()
   }

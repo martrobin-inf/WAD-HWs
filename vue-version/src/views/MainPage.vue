@@ -38,7 +38,32 @@ export default {
     logout() {
       localStorage.removeItem('token')
       this.$router.push({ name: 'login' })
+    },
+    async deleteAllPosts() {
+    if (!confirm("Are you sure you want to delete all posts?")) return
+
+    try {
+      const token = localStorage.getItem("token")
+      const res = await fetch("http://localhost:3000/posts", {
+        method: "DELETE",
+        headers: {
+          "Authorization": `Bearer ${token}`
+        }
+      })
+
+      if (res.status === 204) {
+        alert("All posts deleted!")
+        // Clear posts in Vuex store
+        this.$store.commit('setPosts', [])
+      } else {
+        const data = await res.json()
+        alert(data.error || "Failed to delete posts")
+      }
+    } catch (err) {
+      console.error(err)
+      alert("Server error")
     }
+  }
   },
   mounted() {
     this.$store.dispatch('fetchPosts')

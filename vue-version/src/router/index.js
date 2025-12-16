@@ -3,7 +3,7 @@ import MainPage from '../views/MainPage.vue'
 import LoginPage from '../views/LoginPage.vue'
 import SignUpPage from '../views/SignUpPage.vue'
 import ContactsPage from '../views/ContactsPage.vue'
-
+import AddPostPage from '../views/AddPostPage.vue'
 
 const routes = [
   {
@@ -21,6 +21,12 @@ const routes = [
     path: '/signup',
     name: 'signup',
     component: SignUpPage
+  },
+
+  {
+    path: '/addpost',
+    name: 'addpost',
+    component: AddPostPage
   },
 
   {

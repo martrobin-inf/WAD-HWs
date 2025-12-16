@@ -79,10 +79,34 @@ export default {
       this.passwordValid = e.length === 0
     },
 
-    submitSignup() {
+    async submitSignup() {
       this.validatePassword()
-      if (this.passwordValid) alert("Signup successful!") 
-      else alert("The password is not valid!")
+      if (!this.passwordValid) {
+        alert("The password is not valid!")
+        return
+      }
+
+      try {
+        const res = await fetch("http://localhost:3000/auth/signup", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email: this.email, password: this.password })
+        })
+
+        const data = await res.json()
+
+        if (!res.ok) {
+          alert(data.error || "SignUp failed")
+          return
+        }
+
+        // saving token
+        localStorage.setItem("token", data.token)
+        alert("SignUp successful!")
+      } catch (err) {
+        console.error("SignUp error: ", err)
+        alert("Server error")
+      }
     }
   }
 }

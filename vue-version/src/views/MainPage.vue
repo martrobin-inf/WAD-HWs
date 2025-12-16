@@ -37,7 +37,7 @@ export default {
     },
     logout() {
       localStorage.removeItem('token')
-      this.$router.push({ name: 'signup' })
+      this.$router.push({ name: 'login' })
     }
   },
   mounted() {

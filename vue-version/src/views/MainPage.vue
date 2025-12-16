@@ -77,8 +77,12 @@ export default {
 }
 button {
   margin-bottom: 15px;
-  padding: 5px 10px;
+  padding: 10px 15px;
   cursor: pointer;
+  background:rgb(234, 196, 107);
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
 }
 
 .logout-btn {

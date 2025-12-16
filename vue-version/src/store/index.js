@@ -22,10 +22,25 @@ export default createStore({
   actions: {
     async fetchPosts({ commit }) {
       try {
-        const response = await fetch('https://api.jsonbin.io/v3/b/6924f1acae596e708f6ec23e?meta=false')
-        const data = await response.json()
+        const token = localStorage.getItem("token")
 
-        commit('setPosts', data)
+        if (!token) {
+          console.warn("No token found")
+          return
+        }
+
+        const res = await fetch("http://localhost:3000/posts", {
+          headers: {
+            "Authorization": `Bearer ${token}`
+          }
+        })
+
+        if (!res.ok) {
+          throw new Error("Failed to fetch posts")
+        }
+
+        const data = await res.json()
+        commit("setPosts", data)
       } catch (error) {
         console.error("Failed to fetch posts: ", error)
       }

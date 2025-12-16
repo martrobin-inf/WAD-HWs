@@ -1,20 +1,10 @@
 <template>
     <article class="post">
         <div class="postInfo">
-            <img :src="post.avatar" alt="Avatar" class="postAvatar">
-            <strong>{{ post.author }}</strong>
             <time class="time" :datetime="post.date">{{ formatDate(post.date) }}</time>
         </div>
 
-        <figure class="postMedia" v-if="post.image">
-            <img :src="post.image" :alt="post.text">
-        </figure>
-
-        <p class="postText">{{ post.text }}</p>
-
-        <button class="buttonLike" type="button" @click="likePost">
-            👍 {{ post.likes }}
-        </button>
+        <p class="postText">{{ post.body }}</p>
     </article>
 </template>
 
@@ -25,9 +15,6 @@ export default {
     post: Object
   },
   methods: {
-    likePost() {
-      this.$store.commit('incrementLike', this.post.id)
-    },
     formatDate(dateStr) {
       const options = { year: 'numeric', month: 'short', day: 'numeric' }
       return new Date(dateStr).toLocaleDateString('en-US', options)

@@ -1,11 +1,14 @@
 <template>
     <div>
         <AppHeader />
-        <h2>Main Page</h2>
+        <button class="logout-btn" @click="logout">Logout</button>
         <div class="posts-list">
             <PostCard v-for="post in posts" :key="post.id" :post="post" />
         </div>
-        <button @click="resetAllLikes">Reset Likes</button>
+        <div class="post-actions">
+          <button @click="$router.push({ name: 'addpost' })">Add Post</button>
+          <button @click="deleteAllPosts">Delete All</button>
+        </div>
         <AppFooter />
     </div>
 </template>
@@ -31,6 +34,10 @@ export default {
   methods: {
     resetAllLikes() {
         this.$store.commit('resetLikes')
+    },
+    logout() {
+      localStorage.removeItem('token')
+      this.$router.push({ name: 'signup' })
     }
   },
   mounted() {
@@ -47,5 +54,21 @@ button {
   margin-bottom: 15px;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ed8484;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 600px;
 }
 </style>
